@@ -38,7 +38,6 @@ export const DATA = {
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/blog", icon: NotebookIcon, label: "Blog" },
   ],
   contact: {
     email: "guptayash.connect@gmail.com",
@@ -60,9 +59,9 @@ export const DATA = {
       },
       email: {
         name: "Send Email",
-        url: "#",
+        url: "mailto:guptayash.connect@gmail.com",
         icon: Icons.email,
-        navbar: false,
+        navbar: true,
       },
     },
   },
@@ -638,6 +637,32 @@ export const DATA = {
           href: "https://github.com/UWPortalSDK/crowmark",
         },
       ],
+    },
+  ],
+  research: [
+    {
+      title: "Toward Asynchronously Weight Updating Federated Learning for AI-on-Edge IoT Systems ",
+      abstract: "Designed an asynchronously weight updating federated learning algorithm for AI-on-Edge IoT systems, enhancing data privacy by eliminating the need for centralized data sharing. Applied the approach to face mask detection, traditionally a centralized computer vision task, by distributing learning tasks across users. Investigated performance trade-offs between synchronous and asynchronous weight updates, introducing a penalization mechanism to optimize model aggregation. Experimental results demonstrated comparable accuracy to centralized training while significantly reducing transmission time overhead.",
+      authors: ["Yash Gupta", "Zubair Md Fadlullah", "Mostafa M. Fouda"],
+      publishedDate: "November 2022",
+      journal: "2022 IEEE International Conference on Internet of Things and Intelligence Systems (IoTaIS)",
+      doi: "10.1109/IoTaIS56727.2022.9975908",
+    },
+    {
+      title: "Intelligent Real-Time Face-Mask Detection System with Hardware Acceleration for COVID-19 Mitigation ",
+      abstract: "Developed and implemented a hardware-accelerated real-time face-mask detection system using deep learning (DL), optimized for embedded platforms including Raspberry Pi 4B (Google Coral TPU, Intel NCS2 VPU) and NVIDIA Jetson Nano. Designed a custom face-mask detection model (MaskDetect), independently quantized and optimized for each hardware platform. Conducted an ablation study comparing MaskDetect to transfer-learning models (VGG16, ResNet-50V2, InceptionV3), achieving 94%+ accuracy on most platforms. Results demonstrated that Jetson Nano offers the best trade-off in accuracy (94.2%), inference speed, and cost, making it ideal for real-time deployment.",
+      authors: ["Peter Sertic","Ayman Alahmar","Thangarajah Akilan", "Yash Gupta", "Marko Javorac"],
+      publishedDate: "May 2022",
+      journal: "Healthcare 2022",
+      doi: "10.3390/healthcare10050873",
+    },
+    {
+      title: "HELIUS: A Blockchain Based Renewable Energy Trading System",
+      abstract: "Developed a peer-to-peer (P2P) sustainable energy exchange system using Blockchain and Deep Learning to optimize energy trading during peak demand. Designed a novel framework for power system operations, enabling users to trade energy efficiently while simulating sustainable energy production based on location, time, and weather. Integrated a blind bidding mechanism and a web application to demonstrate real-world feasibility.",
+      authors: ["Yash Gupta", "Marko Javorac","Shaun Cyr","Abdulsalam Yassine"],
+      publishedDate: "December 2021",
+      journal: " 2021 4th International Seminar on Research of Information Technology and Intelligent Systems (ISRITI)",
+      doi: "10.1109/ISRITI54043.2021.9702767",
     },
   ],
 } as const;
