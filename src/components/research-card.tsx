@@ -6,7 +6,7 @@ import { FileText, Book, FileCode } from "lucide-react";
 interface Props {
   title: string;
   abstract: string;
-  authors: string[];
+  authors: readonly string[];
   publishedDate: string;
   journal?: string;
   publicationType?: "journal" | "conference" | "report" | "preprint" | "thesis";
@@ -64,8 +64,8 @@ export function ResearchCard({
   };
 
   return (
-    <li className="relative ml-10 py-4">
-      <div className="absolute -left-16 top-2 flex items-center justify-center bg-white rounded-full">
+    <li className="relative ml-4 sm:ml-10 py-4 w-full px-4">
+      <div className="absolute -left-8 sm:-left-16 top-2 flex items-center justify-center bg-white rounded-full">
         <Avatar className="border size-12 m-auto">
           <AvatarImage src="/paper-icon.png" alt={title} className="object-contain" />
           <AvatarFallback>
@@ -96,7 +96,7 @@ export function ResearchCard({
               {journal}
               {doi && (
                 <Link href={`https://doi.org/${doi}`} className="text-primary hover:underline ml-1">
-                  [DOI: {doi}]
+                  url
                 </Link>
               )}
             </p>
