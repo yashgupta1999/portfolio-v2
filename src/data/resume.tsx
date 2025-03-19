@@ -8,7 +8,7 @@ export const DATA = {
   location: "Calgary, Canada",
   locationLink: "https://www.google.com/maps/place/calgary",
   description:
-    "Software Engineer turned Entrepreneur. I love building things and helping people. Very active on Twitter.",
+    "AI Engineer! The more I learn, the less I know—so I just keep learning and building.",
   summary:
     "At the end of 2022, I quit my job as a software engineer to go fulltime into building and scaling my own SaaS businesses. In the past, [I pursued a double degree in computer science and business](/#education), [interned at big tech companies in Silicon Valley](https://www.youtube.com/watch?v=d-LJ2e5qKdE), and [competed in over 21 hackathons for fun](/#hackathons). I also had the pleasure of being a part of the first ever in-person cohort of buildspace called [buildspace sf1](https://buildspace.so/sf1).",
   avatarUrl: "/me.jpeg",
@@ -77,7 +77,13 @@ export const DATA = {
       start: "May 2023",
       end: "September 2024",
       description:
-        "Developed a custom LLM for a startup to help them with their product development and research."
+        [          
+            "**Cancer Care Pathways Framework** : Pathways based on care plans, incorporating auto-highlighting and interactive UI elements in collaboration with the Director of Clinical Pathways.",
+            "**MIMIC Dataset Analytics** : Conducted data analysis on **MIMIC-III and MIMIC-IV datasets**, mapped data onto a custom ontology, and applied **heterogeneous graphical neural networks (GNN)** to predict patient stay duration and mortality.",
+            "**Clinical Research Tool Development** : Developed a **Retrieval-Augmented Generation (RAG)** based tool using **LangChain**, **OpenAI API**, and **Pinecone** for clinical research.",
+            "**FHIR Integration** : Integrated **OAuth 2.0** **FHIR server** with **OpenEpic** and mapped **FHIR resources** to Aurora Grammar using **Python** and **FastAPI**."
+          
+        ] as string[]
     },
     {
       company: "Aurora Constellations",
@@ -89,31 +95,48 @@ export const DATA = {
       start: "May 2021",
       end: "May 2023",
       description:
-        "Developed a custom LLM for a startup to help them with their product development and research."
+        [
+
+          "**Syntax Integration** : Merged dual syntax grammar trees, optimizing language processing.",
+          "**Speech Recognition & NLU** : Developed command recognition using **Google Speech-to-Text**, **PicoVoice NLU**, and custom NLU solutions.",
+          "**DevOps** for **Scala** **Play Server** : Implemented **containerization**, **authentication mechanisms**, **CI/CD pipelines**, and **monitoring systems** using **Docker** and **GitHub Actions**.",
+          "**Custom DSL Development** : Created a domain-specific language with **XText** for automating medical scoring and enforcing hospital policies.",
+          "Server Optimization & Compliance: Enhanced **SQL** query performance and ensured **HIPAA compliance** through **role-based access control (RBAC)**, **data masking**, and **encryption.**",
+        ] as string[]
     },
     {
-      company: "Lakhead University",
+      company: "Lakehead University & Lockheed Martin",
       href: "https://www.lakeheadu.ca",
       badges: [],
       location: "Thunder Bay, ON",
       title: "Assistant Researcher",
-      logoUrl: "/lakehead.png",
+      logoUrl: ["/lakehead.png", "/lockheed.jpg"],
       start: "July 2021",
       end: "July 2022",
-      description:
-        "Developed a custom LLM for a startup to help them with their product development and research."
+      description: [
+          "Developed and deployed a **remote data logging system** for the **Efficient House Innovation** project, utilizing a **Raspberry Pi** to collect **temperature** and **humidity** data from sensors and transmit it to a **cloud-based database (Firebase)**, reducing **on-site data collection time by 95%** and enabling **real-time analysis**.",
+          "Independently analyzed and debugged **intricate legacy code** within the **dynamic fan control system**, overcoming challenges posed by **insufficient documentation** and **multiple generations of prior development**, to ensure **successful system functionality**.",
+          "Played a key role in the **implementation and testing** of the **dynamic fan system**, which utilizes **Arduino Uno, Raspberry Pi, C++, and Python** to control **airflow** within the **building envelope** for enhanced **energy efficiency** and **moisture management**.",
+          "Resolved **critical implementation challenges** during the **dynamic fan control system's development**, including **communication issues** between the **Arduino** and **Raspberry Pi**, ensuring **project continuity** and **timely progress**."
+        ] as string[]
+      
     },
     {
-      company: "Lakhead University",
+      company: "Lakehead University & Synergy North",
       href: "https://www.lakeheadu.ca",
       badges: [],
       location: "Thunder Bay, ON",
       title: "Assistant Researcher",
-      logoUrl: "/lakehead.png",
+      logoUrl: ["/lakehead.png", "/synergy.jpg"],
       start: "June 2020",
       end: "August 2020",
       description:
-        "Developed a custom LLM for a startup to help them with their product development and research."
+      [
+        "Developed an **LSTM-based power consumption forecasting system**.",
+  "Conducted **time-series analysis** and applied **deep learning techniques** to predict future power loads.",
+  "Self-learned **Python, TensorFlow, and pandas** to preprocess and analyze energy datasets.",
+  "Improved forecasting accuracy through **neural network optimization** and **feature engineering**."
+      ] as string[]
     },
   ],
   education: [
@@ -134,7 +157,7 @@ export const DATA = {
 
     {
       title: "Federated Learning Framework via Distributed Mutual Learning",
-      href: "https://www.researchgate.net/publication/340375328_Image_Compression_Using_Fourier_Series#fullTextFileContent",
+      href: "https://arxiv.org/abs/2503.05803",
       dates: "December 2022",
       active: true,
       description: "Developed a privacy-preserving federated learning framework that replaces weight-sharing with loss-based mutual learning, reducing bandwidth usage and model inversion attack risks. By leveraging knowledge distillation and deep mutual learning, clients share insights without exposing sensitive data, improving model generalization. The framework was evaluated on a face mask detection case study, demonstrating superior performance compared to traditional synchronous and asynchronous federated learning methods. ",
@@ -153,7 +176,7 @@ export const DATA = {
       links: [
         {
           type: "Project Report",
-          href: "https://www.researchgate.net/publication/340375328_Image_Compression_Using_Fourier_Series#fullTextFileContent",
+          href: "https://arxiv.org/abs/2503.05803",
           icon: <Icons.globe className="size-3" />,
         },
       ],

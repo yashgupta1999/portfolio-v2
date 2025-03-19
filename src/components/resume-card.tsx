@@ -10,15 +10,28 @@ import Link from "next/link";
 import React from "react";
 
 interface ResumeCardProps {
-  logoUrl: string;
+  logoUrl: string | readonly string[];
   altText: string;
   title: string;
   subtitle?: string;
   href?: string;
   badges?: readonly string[];
   period?: string;
-  description?: string;
+  description?: string[];
 }
+
+const formatDescription = (text: string) => {
+  // Split by ** markers
+  const parts = text.split(/(\*\*.*?\*\*)/g);
+  return parts.map((part, index) => {
+    // If part is wrapped in **, make it bold
+    if (part.startsWith('**') && part.endsWith('**')) {
+      return <strong key={index}>{part.slice(2, -2)}</strong>;
+    }
+    return part;
+  });
+};
+
 export const ResumeCard = ({
   logoUrl,
   altText,
@@ -45,15 +58,34 @@ export const ResumeCard = ({
       onClick={handleClick}
     >
       <Card className="flex">
-        <div className="flex-none">
-          <Avatar className="border size-12 m-auto bg-muted-background dark:bg-foreground">
-            <AvatarImage
-              src={logoUrl}
-              alt={altText}
-              className="object-contain"
-            />
-            <AvatarFallback>{altText[0]}</AvatarFallback>
-          </Avatar>
+        <div className="flex-none flex">
+          {Array.isArray(logoUrl) ? (
+            logoUrl.map((url, index) => (
+              <Avatar 
+                key={index} 
+                className={cn(
+                  "border size-12 bg-muted-background dark:bg-foreground",
+                  index > 0 ? "-ml-6" : ""
+                )}
+              >
+                <AvatarImage
+                  src={url.toString()}
+                  alt={`${altText} logo ${index + 1}`}
+                  className="object-contain"
+                />
+                <AvatarFallback>{altText[0]}</AvatarFallback>
+              </Avatar>
+            ))
+          ) : (
+            <Avatar className="border size-12 m-auto bg-muted-background dark:bg-foreground">
+              <AvatarImage
+                src={logoUrl.toString()}
+                alt={altText}
+                className="object-contain"
+              />
+              <AvatarFallback>{altText[0]}</AvatarFallback>
+            </Avatar>
+          )}
         </div>
         <div className="flex-grow ml-4 items-center flex-col group">
           <CardHeader>
@@ -91,16 +123,19 @@ export const ResumeCard = ({
               initial={{ opacity: 0, height: 0 }}
               animate={{
                 opacity: isExpanded ? 1 : 0,
-
                 height: isExpanded ? "auto" : 0,
               }}
               transition={{
                 duration: 0.7,
                 ease: [0.16, 1, 0.3, 1],
               }}
-              className="mt-2 text-xs sm:text-sm"
+              className="mt-2 text-xs sm:text-sm px-4 pb-4"
             >
-              {description}
+              <ul className="list-disc pl-4 space-y-2">
+                {description.map((point, index) => (
+                  <li key={index}>{formatDescription(point)}</li>
+                ))}
+              </ul>
             </motion.div>
           )}
         </div>
