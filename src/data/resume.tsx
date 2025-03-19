@@ -10,7 +10,7 @@ export const DATA = {
   description:
     "AI Engineer! The more I learn, the less I know—so I just keep learning and building.",
   summary:
-    "At the end of 2022, I quit my job as a software engineer to go fulltime into building and scaling my own SaaS businesses. In the past, [I pursued a double degree in computer science and business](/#education), [interned at big tech companies in Silicon Valley](https://www.youtube.com/watch?v=d-LJ2e5qKdE), and [competed in over 21 hackathons for fun](/#hackathons). I also had the pleasure of being a part of the first ever in-person cohort of buildspace called [buildspace sf1](https://buildspace.so/sf1).",
+    "I'm **Yash Gupta**, an **AI Engineer & System Architect** who loves **building, breaking, and occasionally understanding complex systems**. From **deep learning research** to **scalable AI applications**, I specialize in **LLMs, system design, and automation**—working on **predictive modeling, RAG-based AI copilots, and multi-agent workflows**.  Currently, I focus on **AI-powered solutions that make life easier**, blending **innovation, curiosity, and debugging-induced existential crises**. When I'm not working, I'm **sketching system designs, geeking out over watches, or overanalyzing Kratos' character arc**.",
   avatarUrl: "/me.jpeg",
   skills: [
     "Python",
