@@ -10,7 +10,12 @@ export const DATA = {
   description:
     "AI Engineer! The more I learn, the less I know—so I just keep learning and building.",
   summary:
-    "I'm **Yash Gupta**, an **AI Engineer & System Architect** who loves **building, breaking, and occasionally understanding complex systems**. From **deep learning research** to **scalable AI applications**, I specialize in **LLMs, system design, and automation**—working on **predictive modeling, RAG-based AI copilots, and multi-agent workflows**.  Currently, I focus on **AI-powered solutions that make life easier**, blending **innovation, curiosity, and debugging-induced existential crises**. When I'm not working, I'm **sketching system designs, geeking out over watches, or overanalyzing Kratos' character arc**.",
+    `
+I'm **Yash Gupta**, an **AI Engineer** who loves **building, breaking, and occasionally understanding complex systems**.I work with **LLMs, automation, and AI-driven applications**, from **predictive modeling** to **RAG-based copilots** and **multi-agent workflows**.  
+When I'm not working, I'm probably **geeking out over watches**.  
+
+**Let's build something cool! 🚀**
+`,
   avatarUrl: "/me.jpeg",
   skills: [
     "Python",
@@ -114,11 +119,11 @@ export const DATA = {
       start: "July 2021",
       end: "July 2022",
       description: [
-          "Developed and deployed a **remote data logging system** for the **Efficient House Innovation** project, utilizing a **Raspberry Pi** to collect **temperature** and **humidity** data from sensors and transmit it to a **cloud-based database (Firebase)**, reducing **on-site data collection time by 95%** and enabling **real-time analysis**.",
-          "Independently analyzed and debugged **intricate legacy code** within the **dynamic fan control system**, overcoming challenges posed by **insufficient documentation** and **multiple generations of prior development**, to ensure **successful system functionality**.",
-          "Played a key role in the **implementation and testing** of the **dynamic fan system**, which utilizes **Arduino Uno, Raspberry Pi, C++, and Python** to control **airflow** within the **building envelope** for enhanced **energy efficiency** and **moisture management**.",
-          "Resolved **critical implementation challenges** during the **dynamic fan control system's development**, including **communication issues** between the **Arduino** and **Raspberry Pi**, ensuring **project continuity** and **timely progress**."
-        ] as string[]
+        "Developed a **remote data logging system** using **Raspberry Pi** and **Firebase**, reducing **on-site data collection by 95%** and enabling **real-time monitoring**.",
+        "Debugged and optimized **legacy code** in the **dynamic fan control system**, overcoming **documentation gaps** and ensuring smooth functionality.",
+        "Implemented and tested a **dynamic fan system**, using **Arduino, Raspberry Pi, C++, and Python** to enhance **energy efficiency** and **moisture control**.",
+        "Resolved **critical communication issues** between **Arduino and Raspberry Pi**, ensuring **seamless project execution**."
+      ] as string[]
       
     },
     {
