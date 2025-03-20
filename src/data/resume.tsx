@@ -180,9 +180,14 @@ When I'm not working, I'm probably **geeking out over watches**.
      ],
       links: [
         {
-          type: "Project Report",
+          type: "Arxiv",
           href: "https://arxiv.org/abs/2503.05803",
           icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "GitHub",
+          href: "https://github.com/yashgupta1999/Federated_Learning_Framework_via_Distributed_Mutual_Learning",
+          icon: <Icons.github className="size-3" />,
         },
       ],
       image: "/federated.webp",
