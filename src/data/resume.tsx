@@ -50,7 +50,7 @@ When I'm not working, I'm probably **geeking out over watches**.
     social: {
       GitHub: {
         name: "GitHub",
-        url: "https://dub.sh/dillion-github",
+        url: "https://github.com/yashgupta1999",
         icon: Icons.github,
 
         navbar: true,
