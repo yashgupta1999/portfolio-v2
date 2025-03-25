@@ -4,7 +4,7 @@ import { HomeIcon, NotebookIcon } from "lucide-react";
 export const DATA = {
   name: "Yash Gupta",
   initials: "YG",
-  url: "yashcodes.dev",
+  url: "https://www.yashcodes.dev",
   location: "Calgary, Canada",
   locationLink: "https://www.google.com/maps/place/calgary",
   description:
@@ -12,7 +12,7 @@ export const DATA = {
   summary:
     `
 I'm **Yash Gupta**, an **AI Engineer** who loves **building, breaking, and occasionally understanding complex systems**.I work with **LLMs, automation, and AI-driven applications**, from **predictive modeling** to **RAG-based copilots** and **multi-agent workflows**.  
-When I'm not working, I'm probably **geeking out over watches**.  
+When I'm not working, I'm probably **geeking out over watches**.xs  
 
 **Let's build something cool! 🚀**
 `,
